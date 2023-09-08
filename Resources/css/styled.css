@@ -15,6 +15,11 @@ body {
     font-family: "Bricolage Grotesque";
 }
 
+html, body {
+    max-width: 100%!important;
+    overflow-x: hidden!important;
+}
+
 li, a {
     font-family: "Bricolage Grotesque";
     font-weight: 400;
