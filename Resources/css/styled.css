@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-image: url('C:/Users/Libby/OneDrive/My Documents/Codecademy/Sport club homepage/Resources/images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Bricolage Grotesque";
+}
+
+li, a {
+    font-family: "Bricolage Grotesque";
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
+    padding: 0px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*padding: 30px 10%;*/
+    background-color: rgb(91, 91, 243);
+    /*border-bottom: 1px solid black;*/
+    z-index: 1000;
+    /*width: 100%;
+    height: 4rem;*/
+    /*text-align: center;*/
+}
+
+header #logo {
+    cursor: pointer;
+    height: 3rem;
+    max-width: 100%;
+    float: left;
+}
+
+header .desktop-navigation ul {
+    list-style: none;
+}
+
+header .desktop-navigation ul li {
+    position: relative;
+    float: left;
+}
+
+header .desktop-navigation ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+/*nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}*/
+
+header .desktop-navigation ul li a:hover {
+    background: burlywood;
+    color: white;
+}
+
+/*.link li a {
+    transition: all 0.3s ease 0s;
+}
+
+.link li a:hover {
+    color: grey;
+}*/
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media only screen and (max-width: 991px) {
+
+    header {
+        padding: 20px;
+        border-bottom: 1px solid black;
+    }
+
+
+    header label {
+        display: initial;
+    }
+
+    header label:hover {
+        color: burlywood;
+    }
+
+    header .desktop-navigation {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: rgb(91, 91, 243);
+        border-top: 1px solid black;
+        display: none;
+    }
+
+    header .desktop-navigation ul li {
+        width: 100%;
+    }
+
+    
+    #menu-bar:checked ~ .desktop-navigation {
+        display: initial;
+    }
+
+    #menu-bar a:hover {
+        color: burlywood;
+        
+    }
+}
+
+
+/*Name section*/
+
+.name {
+    text-align: center;
+    font-family: "Bricolage Grotesque";
+    font-weight: bold;
+    font-size: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+    color: white;
+}
+
+.headline {
+    font-family: "Bricolage Grotesque";
+    color: white;
+    line-height: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+.headline h2 {
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: burlywood
+}
+
+.headline h3 {
+    font-weight: 100;
+}
+
+.headline a {
+    color: rgb(91, 91, 243);
+}
+
+/*images section*/
+
+.image-container {
+    /*display: flex;
+    justify-content: space-around;
+    align-content: center;*/
+    display: flex;
+    max-width: 1000px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.image-container img {
+    width: 350px;
+    height: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 2px solid black;
+}
+
+/*statement section*/
+
+.statement {
+    background-color: rgb(91, 91, 243);
+    height: auto;
+    font-family: 'Shadows Into Light';
+    text-align: left;
+    padding: 5.5rem 2rem;
+}
+
+.statement h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.statement h3 {
+    font-size: 20px;
+    padding-top: 1.5rem;
+}
+
+.bottom-images {
+    /*display: flex;
+    justify-content: space-around;
+    align-content: center;*/
+    display: flex;
+    max-width: 1000px;
+    height: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    
+}
+
+.bottom-images img {
+    width: 350px;
+    height: auto;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 2px solid black;
+}
+
+.bottom-pic {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-pic img {
+    width: 600px;
+    height: auto;
+    padding: 2rem 8rem;
+}
+
+/*Join us*/
+
+.join-us {
+    text-align: center;
+    font-family: 'Bricolage Grotesque';
+    margin-bottom: 2rem;
+}
+
+.join-us h2 {
+    background: white;
+    background-size: 40%;
+    font-size: 2.5rem;
+}
+
+.join-us h3 {
+    text-align: left;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    color: white;
+    line-height: 1.4;
+    word-spacing: 1.4;
+}
+
+.join-us img {
+    width: 40px;
+    height: auto;
+}
+
+/*footer section*/
+
+footer {
+    background-color: rgb(91, 91, 243);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 7%;
+    
+}
+
+footer .desktop-navigation ul {
+    list-style: none;
+}
+
+footer .desktop-navigation ul li {
+    position: relative;
+    float: left;
+}
+
+footer .desktop-navigation ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: white;
+    display: block;
+}
